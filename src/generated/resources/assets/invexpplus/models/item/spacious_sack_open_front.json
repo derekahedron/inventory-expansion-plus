@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "invexpplus:item/spacious_sack_open_front"
+  }
+}

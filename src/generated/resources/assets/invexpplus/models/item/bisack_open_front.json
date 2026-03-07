@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "invexpplus:item/bisack_open_front",
+    "layer1": "invexpplus:item/bisack_open_front_overlay"
+  }
+}

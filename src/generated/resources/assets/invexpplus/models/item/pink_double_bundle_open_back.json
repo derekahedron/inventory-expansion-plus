@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "invexpplus:item/pink_double_bundle_open_back"
+  }
+}

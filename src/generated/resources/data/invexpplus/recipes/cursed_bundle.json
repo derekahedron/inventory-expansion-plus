@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "invexpplus:cursed_bundle_fabric"
+    },
+    "-": {
+      "tag": "invexpplus:cursed_bundle_string"
+    }
+  },
+  "pattern": [
+    "-",
+    "#"
+  ],
+  "result": {
+    "item": "invexpplus:cursed_bundle"
+  },
+  "show_notification": true
+}

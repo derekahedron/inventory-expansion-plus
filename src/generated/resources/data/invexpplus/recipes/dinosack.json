@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "invexpplus:dinosack_fabric"
+    },
+    "-": {
+      "tag": "invexpplus:dinosack_string"
+    }
+  },
+  "pattern": [
+    "-#-",
+    "# #",
+    "###"
+  ],
+  "result": {
+    "item": "invexpplus:dinosack"
+  },
+  "show_notification": true
+}

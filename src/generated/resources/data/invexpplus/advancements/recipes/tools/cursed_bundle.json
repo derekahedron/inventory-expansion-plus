@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cursed_bundle_string": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "invexpplus:cursed_bundle_string"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "invexpplus:cursed_bundle"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_cursed_bundle_string",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "invexpplus:cursed_bundle"
+    ]
+  },
+  "sends_telemetry_event": false
+}

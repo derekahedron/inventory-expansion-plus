@@ -1,0 +1,14 @@
+{
+  "type": "invexp:dye_bundle",
+  "category": "equipment",
+  "group": "double_bundle_dye",
+  "input": {
+    "tag": "invexpplus:dyeable_double_bundle"
+  },
+  "material": {
+    "item": "minecraft:red_dye"
+  },
+  "result": {
+    "item": "invexpplus:red_double_bundle"
+  }
+}

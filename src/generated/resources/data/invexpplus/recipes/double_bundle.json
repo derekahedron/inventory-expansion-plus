@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "tag": "invexpplus:double_bundle_fabric"
+    },
+    "-": {
+      "tag": "forge:string"
+    }
+  },
+  "pattern": [
+    "-",
+    "#"
+  ],
+  "result": {
+    "item": "invexpplus:double_bundle"
+  },
+  "show_notification": true
+}

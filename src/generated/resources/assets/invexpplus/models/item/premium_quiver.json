@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "overrides": [
+    {
+      "model": "invexpplus:item/premium_quiver_filled",
+      "predicate": {
+        "invexp:quiver/has_contents": 1.0
+      }
+    }
+  ],
+  "textures": {
+    "layer0": "invexpplus:item/premium_quiver"
+  }
+}
