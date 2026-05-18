@@ -1,6 +1,6 @@
 package derekahedron.invexpplus.client;
 
-import derekahedron.invexp.quiver.QuiverContents;
+import derekahedron.invexp.item.quiver.QuiverContentsWriter;
 import derekahedron.invexp.util.InvExpUtil;
 import derekahedron.invexpplus.InventoryExpansionPlus;
 import derekahedron.invexpplus.item.IEPItems;
@@ -25,11 +25,11 @@ public class InventoryExpansionPlusClient {
     public static void setupItemOverrides(FMLClientSetupEvent event) {
         event.enqueueWork(() -> {
             ItemProperties.register(IEPItems.PRO_QUIVER.get(), InvExpUtil.location("quiver/has_contents"), (stack, level, entity, id) -> {
-                QuiverContents contents = QuiverContents.of(stack);
+                QuiverContentsWriter contents = QuiverContentsWriter.of(stack);
                 return contents != null && !contents.isEmpty() ? 1.0F : 0.0F;
             });
             ItemProperties.register(IEPItems.PREMIUM_QUIVER.get(), InvExpUtil.location("quiver/has_contents"), (stack, level, entity, id) -> {
-                QuiverContents contents = QuiverContents.of(stack);
+                QuiverContentsWriter contents = QuiverContentsWriter.of(stack);
                 return contents != null && !contents.isEmpty() ? 1.0F : 0.0F;
             });
         });

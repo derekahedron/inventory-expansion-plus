@@ -1,8 +1,10 @@
 package derekahedron.invexpplus.item;
 
-import derekahedron.invexp.item.BetterBundleItem;
+import derekahedron.invexp.item.bundle.BetterBundleItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
+
+import java.util.Optional;
 
 public class BundleOfJoyItem extends BetterBundleItem {
 
@@ -11,7 +13,7 @@ public class BundleOfJoyItem extends BetterBundleItem {
     }
 
     @Override
-    public Component getTooltipDescription(ItemStack stack) {
-        return Component.translatable(getDescriptionId() + ".desc");
+    public Optional<Component> getTooltipDescription(ItemStack stack) {
+        return Optional.of(Component.translatable(getDescriptionId() + ".desc"));
     }
 }

@@ -1,16 +1,21 @@
 package derekahedron.invexpplus.item;
 
-import derekahedron.invexp.item.QuiverItem;
+
+import derekahedron.invexp.item.quiver.QuiverItem;
+import net.minecraft.world.item.ItemStack;
+import org.apache.commons.lang3.math.Fraction;
 
 public class ExpandedQuiverItem extends QuiverItem {
-    public final int maxOccupancyStacks;
 
-    public ExpandedQuiverItem(int maxOccupancyStacks, Properties properties) {
+    public final Fraction maxWeight;
+
+    public ExpandedQuiverItem(Fraction maxWeight, Properties properties) {
         super(properties);
-        this.maxOccupancyStacks = maxOccupancyStacks;
+        this.maxWeight = maxWeight;
     }
 
-    public int getMaxQuiverOccupancyStacks() {
-        return maxOccupancyStacks;
+    @Override
+    public Fraction getMaxWeight(ItemStack self) {
+        return maxWeight;
     }
 }

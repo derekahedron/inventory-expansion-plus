@@ -1,22 +1,26 @@
 package derekahedron.invexpplus.item;
 
-import derekahedron.invexp.item.BetterBundleItem;
+import derekahedron.invexp.item.bundle.BetterBundleItem;
+import net.minecraft.world.item.ItemStack;
+import org.apache.commons.lang3.math.Fraction;
 
 public class ExpandedBundleItem extends BetterBundleItem {
-    public final int occupancyStacks;
 
-    public ExpandedBundleItem(int occupancyStacks, Properties properties) {
+    public final Fraction maxWeight;
+
+    public ExpandedBundleItem(Fraction maxWeight, Properties properties) {
         super(properties);
-        this.occupancyStacks = occupancyStacks;
+        this.maxWeight = maxWeight;
     }
 
     @Override
-    public int getMaxBundleWeightStacks() {
-        return super.getMaxBundleWeightStacks() * occupancyStacks;
+    public Fraction getMaxWeight(ItemStack self) {
+        return maxWeight;
     }
 
     @Override
-    public int getMaxBundleStacks() {
-        return super.getMaxBundleStacks() * occupancyStacks;
+    public int getMaxStacks(ItemStack self) {
+        Fraction maxStacks = maxWeight.multiplyBy(Fraction.getFraction(64));
+        return (maxStacks.getNumerator() + maxStacks.getDenominator() + 1) / maxStacks.getDenominator();
     }
 }

@@ -1,9 +1,11 @@
 package derekahedron.invexpplus.item;
 
-import derekahedron.invexp.item.SackItem;
+import derekahedron.invexp.item.sack.SackItem;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import org.apache.commons.lang3.math.Fraction;
+
+import java.util.Optional;
 
 public class EverythingSackItem extends SackItem {
 
@@ -12,17 +14,17 @@ public class EverythingSackItem extends SackItem {
     }
 
     @Override
-    public int getMaxSackTypes() {
-        return getMaxSackStacks();
+    public int getMaxSackTypes(ItemStack self) {
+        return getMaxStacks(self);
     }
 
     @Override
-    public Fraction getMaxSackWeight() {
-        return super.getMaxSackWeight().divideBy(Fraction.getFraction(2));
+    public Fraction getMaxWeight(ItemStack self) {
+        return super.getMaxWeight(self).divideBy(Fraction.getFraction(2));
     }
 
     @Override
-    public Component getTooltipDescription(ItemStack stack) {
-        return Component.translatable(getDescriptionId() + ".desc");
+    public Optional<Component> getTooltipDescription(ItemStack stack) {
+        return Optional.of(Component.translatable(getDescriptionId() + ".desc"));
     }
 }

@@ -1,10 +1,12 @@
 package derekahedron.invexpplus.item;
 
-import derekahedron.invexp.item.SackItem;
+import derekahedron.invexp.item.sack.SackItem;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.DyeableLeatherItem;
 import net.minecraft.world.item.ItemStack;
+
+import java.util.Optional;
 
 public class BisackItem extends SackItem implements DyeableLeatherItem {
 
@@ -18,12 +20,12 @@ public class BisackItem extends SackItem implements DyeableLeatherItem {
     }
 
     @Override
-    public int getMaxSackTypes() {
+    public int getMaxSackTypes(ItemStack self) {
         return 2;
     }
 
     @Override
-    public Component getTooltipDescription(ItemStack stack) {
-        return Component.translatable(getDescriptionId() + ".desc");
+    public Optional<Component> getTooltipDescription(ItemStack stack) {
+        return Optional.of(Component.translatable(getDescriptionId() + ".desc"));
     }
 }
