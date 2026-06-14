@@ -33,13 +33,15 @@ public class IEPItemTagsProvider extends ItemTagsProvider {
 
         tag(InvExpItemTags.SACKS)
                 .add(IEPItems.BISACK.get())
-                .add(IEPItems.SPACIOUS_SACK.get())
                 .add(IEPItems.DINOSACK.get())
-                .add(IEPItems.EVERYTHING_SACK.get());
+                .add(IEPItems.EVERYTHING_SACK.get())
+                .add(IEPItems.SPACIOUS_SACK.get());
 
         tag(InvExpItemTags.QUIVERS)
+                .add(IEPItems.STARTER_QUIVER.get())
                 .add(IEPItems.PRO_QUIVER.get())
-                .add(IEPItems.PREMIUM_QUIVER.get());
+                .add(IEPItems.PREMIUM_QUIVER.get())
+                .add(IEPItems.UNLIMITED_QUIVER.get());
 
         tag(InvExpItemTags.BUNDLES)
                 .addTag(IEPItemTags.DYEABLE_DOUBLE_BUNDLES)
@@ -84,10 +86,13 @@ public class IEPItemTagsProvider extends ItemTagsProvider {
         tag(IEPItemTags.CURSED_BUNDLE_STRING)
                 .addOptional(CompatUtil.alexsCaves("shadow_silk"));
 
+        tag(IEPItemTags.SHODDY_QUIVER_BARK)
+                .addOptional(CompatUtil.farmersDelight("tree_bark"));
+
         tag(IEPItemTags.PRO_QUIVER_ROPE)
                 .addOptional(CompatUtil.farmersDelight("rope"));
 
-        tag(IEPItemTags.PRO_QUIVER_BARK)
-                .addOptional(CompatUtil.farmersDelight("tree_bark"));
+        tag(IEPItemTags.PRO_QUIVER_METAL)
+                .addOptional(CompatUtil.alexsCaves("polymer_plate"));
     }
 }

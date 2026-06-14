@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-17T19:45:43.3063678	Inventory Expansion Plus Item Tags
+// 1.20.1	2026-06-12T19:45:55.3197125	Inventory Expansion Plus Item Tags
 3f9af80fc8827ffb5b7064c7afba2e7a69c2eeed data/invexpplus/tags/items/bisack_fabric.json
 9a4fb9409c2b5648c0e44b80119473e5d36a5588 data/invexpplus/tags/items/cursed_bundle_fabric.json
 b0149a7c8ecd81afd217ad9032c0498bcd35657c data/invexpplus/tags/items/cursed_bundle_string.json
@@ -6,8 +6,9 @@ dbb4e56ece8d3587fe17675dab3d4a1d5af7533e data/invexpplus/tags/items/dinosack_fab
 7e7d45b77886831b69e9281cb27846997921a9de data/invexpplus/tags/items/dinosack_string.json
 3903599a3b0230109713944d1b562575c9468ef6 data/invexpplus/tags/items/double_bundle_fabric.json
 84bf822dd174eb546f95ae20341d40921630d2af data/invexpplus/tags/items/dyeable_double_bundle.json
-ab295cc1241d0a56b9055b2e25e60ac325ab9759 data/invexpplus/tags/items/pro_quiver_bark.json
+86d5bf7a0c98a1e49a3f6736a26efed34ba1f3bb data/invexpplus/tags/items/pro_quiver_metal.json
 814bf5a352145285f91234bbb978b74fe89639ed data/invexpplus/tags/items/pro_quiver_rope.json
+ab295cc1241d0a56b9055b2e25e60ac325ab9759 data/invexpplus/tags/items/shoddy_quiver_bark.json
 a71c649e0b3694e5057a4709847f91b19f42ca67 data/invexp/tags/items/bundles.json
-1fe7cc79f51dea09991b55db45b00fb9d14a88a0 data/invexp/tags/items/quivers.json
-64ab4b59520043715c627f9c253aa38d8be656fc data/invexp/tags/items/sacks.json
+c188a7cdb43f069c8dbc0a94e92725d076c16a9a data/invexp/tags/items/quivers.json
+0e5e92cff2e6ca98dea1cfa70361da9f45cb22f1 data/invexp/tags/items/sacks.json

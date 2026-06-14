@@ -25,7 +25,7 @@ public class InventoryExpansionPlus {
 
         modEventBus.addListener(IEPCauldronBehavior::initialize);
         modEventBus.addListener(IEPDispenserBehavior::initialize);
-        modEventBus.addListener(EventPriority.LOW, IEPCreativeTabs::initialize);
+        modEventBus.addListener(EventPriority.LOWEST, IEPCreativeTabs::initialize);
 
         MinecraftForge.EVENT_BUS.register(this);
     }

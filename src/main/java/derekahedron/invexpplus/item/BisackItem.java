@@ -1,5 +1,6 @@
 package derekahedron.invexpplus.item;
 
+import derekahedron.invexp.item.sack.SackContentsReader;
 import derekahedron.invexp.item.sack.SackItem;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
@@ -20,7 +21,7 @@ public class BisackItem extends SackItem implements DyeableLeatherItem {
     }
 
     @Override
-    public int getMaxSackTypes(ItemStack self) {
+    public int getMaxSackTypes(SackContentsReader contents) {
         return 2;
     }
 

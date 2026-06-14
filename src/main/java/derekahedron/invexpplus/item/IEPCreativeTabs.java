@@ -8,15 +8,35 @@ public class IEPCreativeTabs {
 
     public static void initialize(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.COMBAT) {
-            addList(event, InvExpItems.QUIVER.get(),
+            addList(event, Items.CROSSBOW,
+                    IEPItems.STARTER_QUIVER.get(),
+                    InvExpItems.QUIVER.get(),
                     IEPItems.PRO_QUIVER.get(),
+                    IEPItems.UNLIMITED_QUIVER.get(),
                     IEPItems.PREMIUM_QUIVER.get());
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             addList(event, Items.MILK_BUCKET,
                     IEPItems.BOTTOMLESS_BUCKET.get());
 
-            addList(event, InvExpItems.PINK_BUNDLE.get(),
+            addList(event, Items.LEAD,
+                    Items.BUNDLE,
+                    InvExpItems.WHITE_BUNDLE.get(),
+                    InvExpItems.LIGHT_GRAY_BUNDLE.get(),
+                    InvExpItems.GRAY_BUNDLE.get(),
+                    InvExpItems.BROWN_BUNDLE.get(),
+                    InvExpItems.BLACK_BUNDLE.get(),
+                    InvExpItems.RED_BUNDLE.get(),
+                    InvExpItems.ORANGE_BUNDLE.get(),
+                    InvExpItems.YELLOW_BUNDLE.get(),
+                    InvExpItems.LIME_BUNDLE.get(),
+                    InvExpItems.GREEN_BUNDLE.get(),
+                    InvExpItems.CYAN_BUNDLE.get(),
+                    InvExpItems.LIGHT_BLUE_BUNDLE.get(),
+                    InvExpItems.BLUE_BUNDLE.get(),
+                    InvExpItems.PURPLE_BUNDLE.get(),
+                    InvExpItems.MAGENTA_BUNDLE.get(),
+                    InvExpItems.PINK_BUNDLE.get(),
                     IEPItems.DOUBLE_BUNDLE.get(),
                     IEPItems.WHITE_DOUBLE_BUNDLE.get(),
                     IEPItems.LIGHT_GRAY_DOUBLE_BUNDLE.get(),
@@ -36,9 +56,8 @@ public class IEPCreativeTabs {
                     IEPItems.PINK_DOUBLE_BUNDLE.get(),
                     IEPItems.CURSED_BUNDLE.get(),
                     IEPItems.BUNDLE_OF_JOY.get(),
-                    IEPItems.TRIPLE_BUNDLE.get());
-
-            addList(event, InvExpItems.SACK.get(),
+                    IEPItems.TRIPLE_BUNDLE.get(),
+                    InvExpItems.SACK.get(),
                     IEPItems.BISACK.get(),
                     IEPItems.DINOSACK.get(),
                     IEPItems.EVERYTHING_SACK.get(),

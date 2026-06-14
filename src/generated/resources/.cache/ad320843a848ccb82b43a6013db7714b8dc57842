@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-17T19:55:37.0435602	Item Models: invexpplus
+// 1.20.1	2026-06-12T19:45:55.3227288	Item Models: invexpplus
 da230677e1674a0cc27d9af32c6ebdfb483c7595 assets/invexpplus/models/item/bisack.json
 f7918ef382da3fb5bba9f3e9182f8de3b509a5e4 assets/invexpplus/models/item/bisack_open_back.json
 2d5bf6d6ea51f3681d6e83a8914405af91eaeb4d assets/invexpplus/models/item/bisack_open_front.json
@@ -67,9 +67,13 @@ ce75790137e829cb0d76e96d83ef3dc3e646ae60 assets/invexpplus/models/item/red_doubl
 3cbd2f5848c3b0941aeca761ee7d4968b7e82992 assets/invexpplus/models/item/spacious_sack.json
 82ebd7647c0cd454e61ab989490d919e9804dc03 assets/invexpplus/models/item/spacious_sack_open_back.json
 f3a7af6c355f1b038c37aa12d68a9a5ee5d74da0 assets/invexpplus/models/item/spacious_sack_open_front.json
+417f644ae8455d2e6451723508022c54ba0c5067 assets/invexpplus/models/item/starter_quiver.json
+28b441081ad8d8953a70da042dcc2e43ed35d2b9 assets/invexpplus/models/item/starter_quiver_filled.json
 7d39ec6bca5039bd023f49d7012659983b75f790 assets/invexpplus/models/item/triple_bundle.json
 30bd44ef6c34c0424e66dbe04d1307918c99d69d assets/invexpplus/models/item/triple_bundle_open_back.json
 9a6b5fcb925e0b56075df26545e03dfaece55cad assets/invexpplus/models/item/triple_bundle_open_front.json
+a5121c776fbcd937fbfabf4706f99f8a8bd77e8a assets/invexpplus/models/item/unlimited_quiver.json
+1d7d10c834b88f32b224b658e5769344140a23c3 assets/invexpplus/models/item/unlimited_quiver_filled.json
 c15de37116aa7ece6d6d4c750f14a0be2673ff1c assets/invexpplus/models/item/white_double_bundle.json
 1c120700494529e7acfc3525053165069acf392d assets/invexpplus/models/item/white_double_bundle_open_back.json
 7eab755c13e57c64779902213882b39c6d000ff2 assets/invexpplus/models/item/white_double_bundle_open_front.json

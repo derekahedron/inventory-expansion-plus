@@ -1,8 +1,8 @@
 package derekahedron.invexpplus.item;
 
 
+import derekahedron.invexp.item.quiver.QuiverContentsReader;
 import derekahedron.invexp.item.quiver.QuiverItem;
-import net.minecraft.world.item.ItemStack;
 import org.apache.commons.lang3.math.Fraction;
 
 public class ExpandedQuiverItem extends QuiverItem {
@@ -15,7 +15,7 @@ public class ExpandedQuiverItem extends QuiverItem {
     }
 
     @Override
-    public Fraction getMaxWeight(ItemStack self) {
+    public Fraction getMaxWeight(QuiverContentsReader contents) {
         return maxWeight;
     }
 }

@@ -1,7 +1,7 @@
 package derekahedron.invexpplus.item;
 
+import derekahedron.invexp.item.sack.SackContentsReader;
 import derekahedron.invexp.item.sack.SackItem;
-import net.minecraft.world.item.ItemStack;
 import org.apache.commons.lang3.math.Fraction;
 
 public class ExpandedSackItem extends SackItem {
@@ -14,7 +14,7 @@ public class ExpandedSackItem extends SackItem {
     }
 
     @Override
-    public Fraction getMaxWeight(ItemStack self) {
+    public Fraction getMaxWeight(SackContentsReader contents) {
         return maxWeight;
     }
 }

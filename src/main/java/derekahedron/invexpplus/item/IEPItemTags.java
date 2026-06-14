@@ -27,9 +27,12 @@ public class IEPItemTags {
     public static final TagKey<Item> CURSED_BUNDLE_STRING =
             ItemTags.create(IEPUtil.location("cursed_bundle_string"));
 
+    public static final TagKey<Item> SHODDY_QUIVER_BARK =
+            ItemTags.create(IEPUtil.location("shoddy_quiver_bark"));
+
     public static final TagKey<Item> PRO_QUIVER_ROPE =
             ItemTags.create(IEPUtil.location("pro_quiver_rope"));
 
-    public static final TagKey<Item> PRO_QUIVER_BARK =
-            ItemTags.create(IEPUtil.location("pro_quiver_bark"));
+    public static final TagKey<Item> PRO_QUIVER_METAL =
+            ItemTags.create(IEPUtil.location("pro_quiver_metal"));
 }

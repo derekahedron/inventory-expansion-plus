@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_arrow": {
+    "has_pro_quiver_metal": {
       "conditions": {
         "items": [
           {
-            "tag": "minecraft:arrows"
+            "tag": "invexpplus:pro_quiver_metal"
           }
         ]
       },
@@ -20,7 +20,7 @@
   },
   "requirements": [
     [
-      "has_arrow",
+      "has_pro_quiver_metal",
       "has_the_recipe"
     ]
   ],

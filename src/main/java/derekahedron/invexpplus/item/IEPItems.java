@@ -160,11 +160,23 @@ public class IEPItems {
                                     .rarity(Rarity.RARE)
                                     .stacksTo(1)));
 
+    public static final RegistryObject<ExpandedQuiverItem> STARTER_QUIVER =
+            ITEMS.register("starter_quiver", () ->
+                    new ExpandedQuiverItem(
+                            Fraction.getFraction(4),
+                            new Item.Properties()
+                                    .stacksTo(1)));
     public static final RegistryObject<ExpandedQuiverItem> PRO_QUIVER =
             ITEMS.register("pro_quiver", () ->
                     new ExpandedQuiverItem(
                             Fraction.getFraction(12),
                             new Item.Properties()
+                                    .stacksTo(1)));
+    public static final RegistryObject<UnlimitedQuiverItem> UNLIMITED_QUIVER =
+            ITEMS.register("unlimited_quiver", () ->
+                    new UnlimitedQuiverItem(
+                            new Item.Properties()
+                                    .rarity(Rarity.UNCOMMON)
                                     .stacksTo(1)));
     public static final RegistryObject<ExpandedQuiverItem> PREMIUM_QUIVER =
             ITEMS.register("premium_quiver", () ->

@@ -88,16 +88,28 @@ public class IEPRecipeProvider extends RecipeProvider {
                 .save(consumer, IEPItems.CURSED_BUNDLE.getId());
 
         ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,
-                        IEPItems.PRO_QUIVER.get())
-                .define('-', IEPItemTags.PRO_QUIVER_ROPE)
-                .define('X', Items.RABBIT_HIDE)
-                .define('#', IEPItemTags.PRO_QUIVER_BARK)
-                .pattern(" XX")
+                        IEPItems.STARTER_QUIVER.get())
+                .define('-', Tags.Items.STRING)
+                .define('#', IEPItemTags.SHODDY_QUIVER_BARK)
+                .pattern(" ##")
                 .pattern("-##")
                 .pattern(" ##")
                 .unlockedBy(
                         getHasName(Items.ARROW),
                         has(ItemTags.ARROWS))
+                .save(consumer, IEPItems.STARTER_QUIVER.getId());
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS,
+                        IEPItems.PRO_QUIVER.get())
+                .define('-', IEPItemTags.PRO_QUIVER_ROPE)
+                .define('X', Items.RABBIT_HIDE)
+                .define('#', IEPItemTags.PRO_QUIVER_METAL)
+                .pattern(" XX")
+                .pattern("-##")
+                .pattern(" ##")
+                .unlockedBy(
+                        "has_pro_quiver_metal",
+                        has(IEPItemTags.PRO_QUIVER_METAL))
                 .save(consumer, IEPItems.PRO_QUIVER.getId());
     }
 

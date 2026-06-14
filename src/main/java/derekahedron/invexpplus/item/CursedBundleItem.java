@@ -1,5 +1,6 @@
 package derekahedron.invexpplus.item;
 
+import derekahedron.invexp.item.bundle.BundleContentsReader;
 import derekahedron.invexp.item.bundle.BundleContentsWriter;
 import derekahedron.invexpplus.damage.IEPDamageTypes;
 import net.minecraft.core.Holder;
@@ -32,8 +33,10 @@ public class CursedBundleItem extends ExpandedBundleItem {
     public boolean overrideStackedOnOther(ItemStack stack, Slot slot, ClickAction clickAction, Player player) {
         boolean otherSlotEmpty = slot.getItem().isEmpty();
         boolean overridden = super.overrideStackedOnOther(stack, slot, clickAction, player);
-        if (overridden && clickAction == ClickAction.SECONDARY && otherSlotEmpty) {
-            damageTakingOutStacks(player, stack, slot.getItem());
+        BundleContentsWriter contents = BundleContentsWriter.of(stack);
+
+        if (contents != null && overridden && clickAction == ClickAction.SECONDARY && otherSlotEmpty) {
+            damageTakingOutStacks(player, contents, slot.getItem());
         }
         return overridden;
     }
@@ -42,8 +45,10 @@ public class CursedBundleItem extends ExpandedBundleItem {
     public boolean overrideOtherStackedOnMe(ItemStack stack, ItemStack otherStack, Slot slot, ClickAction clickAction, Player player, SlotAccess slotAccess) {
         boolean otherSlotEmpty = otherStack.isEmpty();
         boolean overridden = super.overrideOtherStackedOnMe(stack, otherStack, slot, clickAction, player, slotAccess);
-        if (overridden && clickAction == ClickAction.SECONDARY && otherSlotEmpty) {
-            damageTakingOutStacks(player, stack, slotAccess.get());
+        BundleContentsWriter contents = BundleContentsWriter.of(stack);
+
+        if (contents != null && overridden && clickAction == ClickAction.SECONDARY && otherSlotEmpty) {
+            damageTakingOutStacks(player, contents, slotAccess.get());
         }
         return overridden;
     }
@@ -58,20 +63,21 @@ public class CursedBundleItem extends ExpandedBundleItem {
         ItemStack stack = player.getItemInHand(hand);
         BundleContentsWriter contents = BundleContentsWriter.of(stack);
         InteractionResultHolder<ItemStack> result = super.use(level, player, hand);
+
         if (contents != null && result.getResult().consumesAction()) {
-            damageTakingOutStacks(player, stack, contents.getStacks().toArray(ItemStack[]::new));
+            damageTakingOutStacks(player, contents, contents.getStacks().toArray(ItemStack[]::new));
         }
 
         return result;
     }
 
-    public void damageTakingOutStacks(Player player, ItemStack self, ItemStack... takenOutStacks) {
+    public void damageTakingOutStacks(Player player, BundleContentsReader contents, ItemStack... takenOutStacks) {
         if (takenOutStacks.length == 0) return;
         float damage = 0;
 
         for (ItemStack stack : takenOutStacks) {
             if (stack.isEmpty()) continue;
-            damage += getWeight(self, stack)
+            damage += getWeight(contents, stack)
                     .multiplyBy(Fraction.getFraction(stack.getCount()))
                     .multiplyBy(Fraction.getFraction(DAMAGE_PER_STACK))
                     .floatValue();

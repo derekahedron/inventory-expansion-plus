@@ -1,6 +1,8 @@
 {
   "values": [
+    "invexpplus:starter_quiver",
     "invexpplus:pro_quiver",
-    "invexpplus:premium_quiver"
+    "invexpplus:premium_quiver",
+    "invexpplus:unlimited_quiver"
   ]
 }

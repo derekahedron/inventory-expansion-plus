@@ -1,4 +1,4 @@
-// 1.20.1	2026-02-17T19:45:43.3084648	Recipes
+// 1.20.1	2026-06-12T19:45:55.3217123	Recipes
 c27a1c230c2ced488393cba2c0968bc3409ccd4b data/invexpplus/advancements/recipes/tools/bisack.json
 0c0fe6846431d3ea48affec84556b198c97ac003 data/invexpplus/advancements/recipes/tools/black_double_bundle.json
 b74e7b36ba358b797dedbc132870b064346f3ba0 data/invexpplus/advancements/recipes/tools/blue_double_bundle.json
@@ -15,9 +15,10 @@ ae4d001b2b3408271d1b64e76899aaa97f5908db data/invexpplus/advancements/recipes/to
 11bc1ac8929947bd33b45b80e780d7b69d7f00bb data/invexpplus/advancements/recipes/tools/magenta_double_bundle.json
 46680ce5ad31bd0adaaea4663cc7cb72dbc7ea1e data/invexpplus/advancements/recipes/tools/orange_double_bundle.json
 5faed44756c425399628b2aa407d46f0878b68ba data/invexpplus/advancements/recipes/tools/pink_double_bundle.json
-a53867100aa595fc1d8987f7d7701017c848b00e data/invexpplus/advancements/recipes/tools/pro_quiver.json
+e5add2b8307162223ac96ccffcc0aecf8c32607b data/invexpplus/advancements/recipes/tools/pro_quiver.json
 da4359f343fe5a57eabc6330fd364a16d4559726 data/invexpplus/advancements/recipes/tools/purple_double_bundle.json
 07d8af1ca0c359a39870c5db126fedc0276e1ae1 data/invexpplus/advancements/recipes/tools/red_double_bundle.json
+1f41d5518eff560dbefb936b5f1198c4adb042de data/invexpplus/advancements/recipes/tools/starter_quiver.json
 585015cabff0d1b5306cb52e9db3e3541c17f010 data/invexpplus/advancements/recipes/tools/white_double_bundle.json
 84fcfd1026fc335b0c82ea0679dc07d06268f0e6 data/invexpplus/advancements/recipes/tools/yellow_double_bundle.json
 d09f5e2a222d2dcd655337a5800bd75f792d9965 data/invexpplus/recipes/bisack.json
@@ -36,8 +37,9 @@ b60abca712938945f75115d427ceb87acc62492d data/invexpplus/recipes/green_double_bu
 c87204fed33f8827f415ba63b89e8013e0fd30ac data/invexpplus/recipes/magenta_double_bundle.json
 639b05aef8d713015c2eea8c6f95cf937aea50b3 data/invexpplus/recipes/orange_double_bundle.json
 a0203b9cbe4bda4baf202e7e095d06036b9f8956 data/invexpplus/recipes/pink_double_bundle.json
-a1f22d07e9c5b14bb074b3962722c13b8be1fc87 data/invexpplus/recipes/pro_quiver.json
+832fe2c80ea3302ed47757f116f260d85ebb13ff data/invexpplus/recipes/pro_quiver.json
 c79389d9a618165f186c204bdb88f4ca0aa7885b data/invexpplus/recipes/purple_double_bundle.json
 e3d5215152367c0c429b5832ca9ca5b1aebaeb86 data/invexpplus/recipes/red_double_bundle.json
+51c51f224c0ab52fd56d4ada51a6e3c2bdb101ee data/invexpplus/recipes/starter_quiver.json
 f5efe771c06a88c4a24ef12f63df8b66f543d7a5 data/invexpplus/recipes/white_double_bundle.json
 990c4eac5a807c468c1382d577416cbff84d6860 data/invexpplus/recipes/yellow_double_bundle.json

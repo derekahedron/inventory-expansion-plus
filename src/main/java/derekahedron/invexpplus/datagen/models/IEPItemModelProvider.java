@@ -22,9 +22,9 @@ public class IEPItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         sack(IEPItems.BISACK.get());
-        bundle(IEPItems.SPACIOUS_SACK.get());
         bundle(IEPItems.DINOSACK.get());
         bundle(IEPItems.EVERYTHING_SACK.get());
+        bundle(IEPItems.SPACIOUS_SACK.get());
 
         bundle(IEPItems.DOUBLE_BUNDLE.get());
         bundle(IEPItems.WHITE_DOUBLE_BUNDLE.get());
@@ -47,7 +47,9 @@ public class IEPItemModelProvider extends ItemModelProvider {
         bundle(IEPItems.CURSED_BUNDLE.get());
         bundle(IEPItems.BUNDLE_OF_JOY.get());
 
+        quiver(IEPItems.STARTER_QUIVER.get());
         quiver(IEPItems.PRO_QUIVER.get());
+        quiver(IEPItems.UNLIMITED_QUIVER.get());
         quiver(IEPItems.PREMIUM_QUIVER.get());
 
         basicItem(IEPItems.BOTTOMLESS_BUCKET.get());
